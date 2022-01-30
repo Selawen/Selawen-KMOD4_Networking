@@ -180,7 +180,7 @@ namespace Network
         public void JoinServer(string ip)
         {
             ipAddress = ip;
-            //Debug.Log("attempting to join server");
+            Debug.Log("attempting to join server");
             if (!(m_Connection == default(NetworkConnection)))
             {
                 m_Connection = default(NetworkConnection);

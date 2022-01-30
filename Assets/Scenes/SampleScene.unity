@@ -509,7 +509,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 771767163}
-        m_TargetAssemblyTypeName: ClientBehaviour, Assembly-CSharp
+        m_TargetAssemblyTypeName: Network.ClientBehaviour, Assembly-CSharp
         m_MethodName: JoinServer
         m_Mode: 1
         m_Arguments:
