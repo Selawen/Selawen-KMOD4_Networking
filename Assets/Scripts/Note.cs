@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Note : MonoBehaviour
 {
-    [SerializeField] private string noteColour;
-    private KeyCode key;
+    [SerializeField] public string noteColour;
+    public KeyCode key;
     //[SerializeField] private GameObject notePrefab;
-    private GameObject note;
+    public GameObject note;
     Vector3 down = new Vector3(0, -0.01f, 0);
 
     public Note(GameObject _note, string _colour, KeyCode _key)
@@ -40,8 +40,12 @@ public class Note : MonoBehaviour
         
     }
 
+    public bool DestroyNote(bool destroy) { 
+        return destroy; 
+    }
+
     public bool DestroyNote(){
-    if (note.transform.position.y <= -5.5f)
+    if (note.transform.position.y <= -7.5f)
         {
             return true;        
         } else {return false;}
